@@ -1,0 +1,22 @@
+.emoji{
+    margin-left: 5px;
+    font-size: 20px;
+    margin-right: 5px;
+}
+.intro{
+    width: 40%;
+    height: 30%;
+}
+#camera , #display{
+    border-color: aqua;
+    border-style: dashed;
+    height: 350px;
+    width: 100;
+}
+#body{
+    background-color: rgb(165, 9, 155);
+}
+#image{
+    height: 350px;
+    width: 100;
+}

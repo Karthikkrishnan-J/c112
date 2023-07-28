@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body id="body">
+        <center>
+            <div class="container">
+                <div style="padding: 20px; margin: 20px; border-radius: 20px;" class="intro btn btn-info">
+                    <h2 style="color: white;">Gesture Web App</h2>
+                    <span class="emoji">&#128076</span>
+                    <span class="emoji">&#128077</span>
+                    <span class="emoji">&#9996</span>
+                    <span class="emoji">&#9994</span>
+                    <span class="emoji">&#128079</span>
+                    <span class="emoji">&#129304</span>
+                </div>
+               <h4 style="color: white;">Take a selfieof a gesture to know about it's meaning</h4>
+               <p style="color: white;">On the following gestures the model is trained</p>
+               <span class="emoji">&#128076</span>
+               <span class="emoji">&#128077</span>
+               <span class="emoji">&#9996</span>
+               <br><br>
+               <div class="col-md-4 col-sm-12 col-xs-12">
+                <h3 class="text-success" style="background-color: white;">Camera</h3>
+                <br><br>
+                <div id="camera"></div>
+                <br><br>
+                <button class="btn btn-info" style="color: white;" onclick="selfie()">Take a selfie</button>
+               </div>
+               <div class="col-md-4 col-sm-12 col-xs-12">
+                <h3 class="text-success" style="background-color: white;">Prediction</h3>
+                <span id="gesture"></span>
+                <h2 id="emoji"></h2>
+               </div>
+               <div class="col-md-4 col-sm-12 col-xs-12">
+                <h3 class="text-success" style="background-color: white;">Picture</h3>
+                <br><br>
+                <div id="display"></div>
+                <br><br>
+                <button class="btn btn-info" style="color: white;" onclick="predict()">Predict Gesture</button>
+               </div>
+
+            </div>
+        </center>
+        <script src="main.js"></script>
+    </body>
+</html>
